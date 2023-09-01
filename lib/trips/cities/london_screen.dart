@@ -1,4 +1,6 @@
+import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 import '../../screens/tours_screen.dart';
 
@@ -12,6 +14,36 @@ class LondonScreen extends StatefulWidget {
 
 class _LondonScreenState extends State<LondonScreen> {
   bool isCan=true;
+  String? imagUrl;
+  final storage = FirebaseStorage.instance;
+
+
+  Future<void>  iniState() async {
+    super.initState();
+
+    imagUrl="";
+
+
+    getImageUrl();
+  }
+  String defaultImageUrl = "default_image_url"; // Change this to your default image URL
+
+  Future<void> getImageUrl() async {
+    try {
+      final ref = FirebaseStorage.instance.ref().child("lon.jfif");
+      var url = await ref.getDownloadURL();
+      setState(() {
+        imagUrl = url;
+      });
+    } catch (e) {
+      print("Error getting image URL: $e");
+      setState(() {
+        imagUrl = defaultImageUrl;
+      });
+    }
+  }
+
+
 
   @override
   Widget build(BuildContext context) {
@@ -69,10 +101,12 @@ class _LondonScreenState extends State<LondonScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Image(image: AssetImage("assets/images/lon.jfif"),height: 300,
-              width: double.infinity,
-              fit: BoxFit.cover,
+            Image(image: NetworkImage(
+                "https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2Flon.jfif?alt=media&token=2b206e91-76c4-46f9-806e-833bc3b81044"),height: 180,
+              width: 500,
+              fit: BoxFit.fill,
             ),
+
             Center(
               child: Text("As one of the world's major global cities,[15] London exerts a strong influence on its arts, entertainment, fashion, commerce and finance, education, health care, media, science and technology, tourism, transport, and communications.[16][17] Its GDP (€801.66 billion in 2017) makes it the largest urban economy in Europe,[18] and it is one of the major financial centres in the world. With Europe's largest concentration of higher education institutions,[19] it is home to some of the highest-ranked academic institutions in the world—Imperial College London in natural and applied sciences, the London School of Economics in social sciences, and the comprehensive University College London.[20][21] London is the most visited city in Europe and has the busiest city airport system in the world.[22] The London Underground is the oldest rapid transit system in the world.[23]"
 

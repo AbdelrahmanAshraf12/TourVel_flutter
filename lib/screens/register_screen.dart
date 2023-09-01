@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -16,9 +17,22 @@ class _RegisterScreenState extends State<RegisterScreen> {
   bool showPassword = true;
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
+  TextEditingController firstNameController = TextEditingController();
+  TextEditingController lastNameController = TextEditingController();
+  TextEditingController ageController = TextEditingController();
   var formKey = GlobalKey<FormState>();
+ Future signUp()async{
 
 
+   Future userdetails(String firstName,String lastName,String age,String email)async {
+   await FirebaseFirestore.instance.collection('Users').add({
+    'first name': firstName,
+    'last name': lastName,
+    'age': age,
+    'email': email,
+  });
+}
+}
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -42,7 +56,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 child: Column(
                   children: [
                     Image(
-                      image: AssetImage("assets/images/Logo.png"),
+                      image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2FLogo.png?alt=media&token=b9b2d24e-1bff-4c8d-8057-15a052e56eef"),
                       height: 210,
                     ),
 
@@ -58,6 +72,69 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       height: 20,
                     ),
                     TextFormField(
+                      controller: firstNameController,
+                      validator: (value) {
+                        final bool emailValid = RegExp(
+                            r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
+                            .hasMatch(value!);
+                        if (value!.isEmpty) {
+                          return "Name must not be empty";
+                        }
+                        return null;
+                      },
+                      keyboardType: TextInputType.name,
+                      decoration: const InputDecoration(
+                        hintText: "First Name",
+                        prefixIcon: Icon(Icons.drive_file_rename_outline),
+                        border: const OutlineInputBorder(),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    TextFormField(
+                      controller: lastNameController,
+                      validator: (value) {
+                        final bool emailValid = RegExp(
+                            r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
+                            .hasMatch(value!);
+                        if (value!.isEmpty) {
+                          return "Name must not be empty";
+                        }
+                        return null;
+                      },
+                      keyboardType: TextInputType.name,
+                      decoration: const InputDecoration(
+                        hintText: "last Name",
+                        prefixIcon: Icon(Icons.drive_file_rename_outline),
+                        border: const OutlineInputBorder(),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    TextFormField(
+                      controller: ageController,
+                      validator: (value) {
+                        final bool ageValid = RegExp(
+                            r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
+                            .hasMatch(value!);
+                        if (value!.isEmpty) {
+                          return "Age must not be empty";
+                        }
+                        return null;
+                      },
+                      keyboardType: TextInputType.name,
+                      decoration: const InputDecoration(
+                        hintText: "Age",
+                        prefixIcon: Icon(Icons.drive_file_rename_outline),
+                        border: const OutlineInputBorder(),
+                      ),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    TextFormField(
                       controller: emailController,
                       validator: (value) {
                         final bool emailValid = RegExp(
@@ -68,10 +145,10 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         }
                         return null;
                       },
-                      keyboardType: TextInputType.emailAddress,
+                      keyboardType: TextInputType.name,
                       decoration: const InputDecoration(
                         hintText: "Email",
-                        prefixIcon: Icon(Icons.email),
+                        prefixIcon: Icon(Icons.email_outlined),
                         border: const OutlineInputBorder(),
                       ),
                     ),
@@ -109,6 +186,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     const SizedBox(
                       height: 20,
                     ),
+
+
+
                     Container(
                       width: double.infinity,
                       decoration: BoxDecoration(

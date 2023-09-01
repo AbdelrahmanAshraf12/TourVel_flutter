@@ -69,9 +69,9 @@ class _AlpsScreenState extends State<AlpsScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Image(image: AssetImage("assets/images/alps.JPG"),height: 300,
-              width: double.infinity,
-              fit: BoxFit.cover,
+            Image(image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2Falps.JPG?alt=media&token=4a36167f-9c71-4e52-83f5-6f55efec6bf6"),height: 160,
+              width: 500,
+              fit: BoxFit.fill,
             ),
             Center(
               child: Text("Alps , The Alpine arch extends from Nice on the western Mediterranean to Trieste on the Adriatic and Vienna at the beginning of the Pannonian Basin. The mountains were formed over tens of millions of years as the African and Eurasian tectonic plates collided. Extreme shortening caused by the event resulted in marine sedimentary rocks rising by thrusting and folding into high mountain peaks such as Mont Blanc and the Matterhorn.  Mont Blanc spans the French–Italian border, and at 4,809 m (15,778 ft) is the highest mountain in the Alps. The Alpine region area contains 128 peaks higher than 4,000 m (13,000 ft).  The altitude and size of the range affect the climate in Europe; in the mountains, precipitation levels vary greatly and climatic conditions consist of distinct zones. Wildlife such as ibex live in the higher peaks to elevations of 3,400 m (11,155 ft), and plants such as edelweiss grow in rocky areas in lower elevations as well as in higher elevations.  Evidence of human habitation in the Alps goes back",style: TextStyle(

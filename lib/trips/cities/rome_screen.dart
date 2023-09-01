@@ -69,9 +69,9 @@ class _RomeScreenState extends State<RomeScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Image(image: AssetImage("assets/images/rome.jfif"),height: 300,
-              width: double.infinity,
-              fit: BoxFit.cover,
+            Image(image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2Frome.jfif?alt=media&token=b046c1cd-63cc-4ed8-a876-eb37670f6a17"),height: 160,
+              width: 500,
+              fit: BoxFit.fill,
             ),
             Center(
               child: Text("Rome (Italian and Latin: Roma [ˈroːma] (listen)) is the capital city of Italy. It is also the capital of the Lazio region, the centre of the Metropolitan City of Rome, and a special comune named Comune di Roma Capitale. With 2,860,009 residents in 1,285 km2 (496.1 sq mi),[2] Rome is the country's most populated comune and the third most populous city in the European Union by population within city limits. The Metropolitan City of Rome, with a population of 4,355,725 residents, is the most populous metropolitan city in Italy.Its metropolitan area is the third-most populous within Italy.[4] Rome is located in the central-western portion of the Italian Peninsula, within Lazio (Latium), along the shores of the Tiber. Vatican City (the smallest country in the world)[5] is an independent country inside the city boundaries of Rome, the only existing example of a country within a city. Rome is often referred to as the City of Seven Hills due to its geographic location, and also as the Eternal City.[6] Rome is generally considered to be the cradle of Western civilization and Christian culture, and the centre of the Catholic Church.",style: TextStyle(

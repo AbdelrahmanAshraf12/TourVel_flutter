@@ -39,7 +39,7 @@ class _DevelopersScreenState extends State<DevelopersScreen> {
                     CircleAvatar(
 
                       radius: 50.0,
-                      backgroundImage: AssetImage("assets/images/abdoashraf.jpeg"),
+                      backgroundImage: NetworkImage("https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2Fabdoashraf.jpeg?alt=media&token=0531575c-5c67-4d91-8670-b61d6f13742c"),
 
                     ),
 
@@ -79,7 +79,7 @@ class _DevelopersScreenState extends State<DevelopersScreen> {
                         CircleAvatar(
 
                           radius: 50.0,
-                          backgroundImage: AssetImage("assets/images/negm.JPG"),
+                          backgroundImage: NetworkImage("https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2Fnegm.JPG?alt=media&token=f04a7edc-8d71-4f0d-84fb-2a203af2d688"),
 
                         ),
 
@@ -118,8 +118,8 @@ class _DevelopersScreenState extends State<DevelopersScreen> {
 
                         CircleAvatar(
 
+                          backgroundImage: NetworkImage("https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2Fabdom.jpg?alt=media&token=5588c4b6-2e45-4684-a2fa-17f3c3407d50"),
                           radius: 50.0,
-                          backgroundImage: AssetImage("assets/images/abdom.jpg"),
 
                         ),
 

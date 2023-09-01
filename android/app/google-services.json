@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "284657736078",
-    "project_id": "flutterproject-f8119",
-    "storage_bucket": "flutterproject-f8119.appspot.com"
+    "project_number": "875858618418",
+    "project_id": "tourvelapp-34f3a",
+    "storage_bucket": "tourvelapp-34f3a.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:284657736078:android:6ae860c50dba0454846cdf",
+        "mobilesdk_app_id": "1:875858618418:android:cb91c1131fcae18e9b742b",
         "android_client_info": {
           "package_name": "com.example.flutter_project"
         }
       },
       "oauth_client": [
         {
-          "client_id": "284657736078-krfe4fqsf6hfidf0u0935nlqn1oehv80.apps.googleusercontent.com",
+          "client_id": "875858618418-s4fb4508g1ok07j8bfv6k2akn42f681v.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyD9C723fdqi_cAKJfP6WpijCeX4XDwd-fU"
+          "current_key": "AIzaSyBy0FtUFSEpzyLbgLWZ_TZ8TC6cqea0jnQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "284657736078-krfe4fqsf6hfidf0u0935nlqn1oehv80.apps.googleusercontent.com",
+              "client_id": "875858618418-s4fb4508g1ok07j8bfv6k2akn42f681v.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

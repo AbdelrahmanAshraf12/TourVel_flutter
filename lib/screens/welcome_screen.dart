@@ -32,7 +32,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
                 child: Column(
                   children: [
                     Image(
-                      image: AssetImage("assets/images/Logo.png"),
+                      image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2FLogo.png?alt=media&token=b9b2d24e-1bff-4c8d-8057-15a052e56eef"),
                       height: 300,
                     ),
                     // SizedBox(

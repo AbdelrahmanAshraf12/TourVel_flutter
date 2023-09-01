@@ -99,8 +99,8 @@ class _MountainsScreenState extends State<MountainsScreen> {
                                     child: Center(
                                       child: Column(
                                         children: [
-                                          Image(image: AssetImage("assets/images/alps.JPG"),height: 160,
-                                            width: 250,
+                                          Image(image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2Falps.JPG?alt=media&token=4a36167f-9c71-4e52-83f5-6f55efec6bf6"),height: 160,
+                                            width: 200,
                                             fit: BoxFit.fill,
                                           ),
                                           Expanded(
@@ -164,7 +164,7 @@ class _MountainsScreenState extends State<MountainsScreen> {
                                     child: Center(
                                       child: Column(
                                         children: [
-                                          Image(image: AssetImage("assets/images/sant.jpg"),height: 160,
+                                          Image(image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2Fsant.jpg?alt=media&token=73871540-4e77-4bce-b7a4-c1f82d774470"),height: 160,
                                             width: 200,
                                             fit: BoxFit.fill,
                                           ),
@@ -232,9 +232,9 @@ class _MountainsScreenState extends State<MountainsScreen> {
                                     child: Center(
                                       child: Column(
                                         children: [
-                                          Image(image: AssetImage("assets/images/hima.jfif"),height: 160,
+                                          Image(image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2Fhima.jfif?alt=media&token=d9b9e172-3d4b-4236-a576-56b458f60acc"),height: 160,
                                             width: 200,
-                                            fit: BoxFit.cover,
+                                            fit: BoxFit.fill,
                                           ),
                                           Expanded(
                                             child: Container(
@@ -297,7 +297,7 @@ class _MountainsScreenState extends State<MountainsScreen> {
                                     child: Center(
                                       child: Column(
                                         children: [
-                                          Image(image: AssetImage("assets/images/everest.JPG"),height: 160,
+                                          Image(image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2Feverest.JPG?alt=media&token=8dab79b0-129d-4d85-99fd-927046dc29fb"),height: 160,
                                             width: 200,
                                             fit: BoxFit.fill,
                                           ),

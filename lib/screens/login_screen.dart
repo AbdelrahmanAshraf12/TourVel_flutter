@@ -5,35 +5,26 @@ import 'package:google_fonts/google_fonts.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
-  static const String screenRoute="loginScreen";
+  static const String screenRoute = "loginScreen";
 
   @override
   State<LoginScreen> createState() => _LoginScreenState();
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-
   bool showPassword = true;
   TextEditingController emailController = TextEditingController();
   TextEditingController passwordController = TextEditingController();
   var formKey = GlobalKey<FormState>();
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.grey[200],
-
       appBar: AppBar(
         backgroundColor: Colors.green,
         elevation: 0,
-
-
-
       ),
-
-
-
       body: SafeArea(
         child: SingleChildScrollView(
           child: Padding(
@@ -44,19 +35,15 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: Column(
                   children: [
                     Image(
-                      image: AssetImage("assets/images/Logo.png"),
+                      image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2FLogo.png?alt=media&token=b9b2d24e-1bff-4c8d-8057-15a052e56eef"),
                       height: 210,
                     ),
-
                     Text(
                       "login",
                       style: GoogleFonts.alata(
                           fontSize: 65,
                           fontWeight: FontWeight.bold,
-                          color: Colors.black
-
-                      ),
-
+                          color: Colors.black),
                     ),
                     const SizedBox(
                       height: 20,
@@ -65,7 +52,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       controller: emailController,
                       validator: (value) {
                         final bool emailValid = RegExp(
-                            r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
+                                r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+")
                             .hasMatch(value!);
                         if (value!.isEmpty) {
                           return "Email must not be empty";
@@ -126,8 +113,8 @@ class _LoginScreenState extends State<LoginScreen> {
                             print(passwordController.text);
                             await FirebaseAuth.instance
                                 .signInWithEmailAndPassword(
-                                email: emailController.text,
-                                password: passwordController.text)
+                                    email: emailController.text,
+                                    password: passwordController.text)
                                 .then((value) {
                               print(value.user?.email);
                               print(value.user?.uid);
@@ -149,7 +136,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     const SizedBox(
                       height: 20,
                     ),
-
                   ],
                 ),
               ),

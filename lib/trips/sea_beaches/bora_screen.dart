@@ -69,9 +69,9 @@ class _BoraScreenState extends State<BoraScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Image(image: AssetImage("assets/images/bora.jfif"),height: 300,
-              width: double.infinity,
-              fit: BoxFit.cover,
+            Image(image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2Fbora.jfif?alt=media&token=6e596826-95b9-4161-8f86-77b04d0cc9ae"),height: 160,
+              width: 500,
+              fit: BoxFit.fill,
             ),
             Center(
               child: Text("Bora Bora (French: Bora-Bora; Tahitian: Pora Pora) is an island group in the Leeward Islands. The Leeward Islands comprise the western part of the Society Islands of French Polynesia, which is an overseas collectivity of the French Republic in the Pacific Ocean. Bora Bora has a total land area of 30.55 km2 (12 sq mi). The main island, located about 230 kilometres (125 nautical miles) northwest of Papeete, is surrounded by a lagoon and a barrier reef. In the center of the island are the remnants of an extinct volcano, rising to two peaks, Mount Pahia and Mount Otemanu; the highest point is at 727 m (2,385 ft). Bora Bora is part of the Commune of Bora-Bora, which also includes the atoll of Tūpai. The languages spoken in Bora Bora are Tahitian and French. However, due to the high tourism population, many natives of Bora Bora have learned to speak English.",style: TextStyle(

@@ -69,9 +69,9 @@ class _MyrtleScreenState extends State<MyrtleScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Image(image: AssetImage("assets/images/alps.JPG"),height: 300,
-              width: double.infinity,
-              fit: BoxFit.cover,
+            Image(image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2Fmyrtle.jfif?alt=media&token=aa37a140-d4d7-4deb-a470-79e189c1edcf"),height: 160,
+              width: 500,
+              fit: BoxFit.fill,
             ),
             Center(
               child: Text("Myrtle Beach is one of the major centers of tourism in South Carolina and the United States. The city's warm subtropical climate, miles of beaches, 86 golf courses, and 1,800 restaurants attract over 20 million visitors each year, making Myrtle Beach one of the most visited destinations in the country.[10][11]  Located along the historic King's Highway (modern U.S. Route 17), the region was once home to the Waccamaw people. During the colonial period, the Whither family settled in the area, and a prominent local waterway, Wither's Swash, is named in their honor. Originally called alternately (New Town) or (Withers), the area was targeted for development as a resort community by Franklin Burroughs, whose sons completed a railroad to the beach and the first inn, Seaside Inn. His widow named the new community Myrtle Beach after the local wax-myrtle shrubs.  The Myrtle Beach metropolitan area is the one of fastest-growing metropolitan areas in the country, with a population of 551,126 as of the 2020 census.",style: TextStyle(

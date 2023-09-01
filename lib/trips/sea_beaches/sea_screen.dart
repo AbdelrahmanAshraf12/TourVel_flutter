@@ -99,8 +99,8 @@ class _SeaScreenState extends State<SeaScreen> {
                                     child: Center(
                                       child: Column(
                                         children: [
-                                          Image(image: AssetImage("assets/images/bora.jfif"),height: 160,
-                                            width: 250,
+                                          Image(image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2Fbora.jfif?alt=media&token=6e596826-95b9-4161-8f86-77b04d0cc9ae"),height: 160,
+                                            width: 200,
                                             fit: BoxFit.fill,
                                           ),
                                           Expanded(
@@ -164,7 +164,7 @@ class _SeaScreenState extends State<SeaScreen> {
                                     child: Center(
                                       child: Column(
                                         children: [
-                                          Image(image: AssetImage("assets/images/miam.jfif"),height: 160,
+                                          Image(image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2Fmiami.jfif?alt=media&token=9499dad0-633c-430b-a61c-158d5f85f236"),height: 160,
                                             width: 200,
                                             fit: BoxFit.fill,
                                           ),
@@ -232,9 +232,9 @@ class _SeaScreenState extends State<SeaScreen> {
                                     child: Center(
                                       child: Column(
                                         children: [
-                                          Image(image: AssetImage("assets/images/bali.jfif"),height: 160,
+                                          Image(image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2Fbali.jfif?alt=media&token=49d5e2a6-2e2e-4809-b6a4-9e40bf5d7637"),height: 160,
                                             width: 200,
-                                            fit: BoxFit.cover,
+                                            fit: BoxFit.fill,
                                           ),
                                           Expanded(
                                             child: Container(
@@ -297,7 +297,7 @@ class _SeaScreenState extends State<SeaScreen> {
                                     child: Center(
                                       child: Column(
                                         children: [
-                                          Image(image: AssetImage("assets/images/myrtle.jfif"),height: 160,
+                                          Image(image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2Fmyrtle.jfif?alt=media&token=aa37a140-d4d7-4deb-a470-79e189c1edcf"),height: 160,
                                             width: 200,
                                             fit: BoxFit.fill,
                                           ),

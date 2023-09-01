@@ -69,9 +69,9 @@ class _BaliScreenState extends State<BaliScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Image(image: AssetImage("assets/images/bali.jfif"),height: 300,
-              width: double.infinity,
-              fit: BoxFit.cover,
+            Image(image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2Fbali.jfif?alt=media&token=49d5e2a6-2e2e-4809-b6a4-9e40bf5d7637"),height: 160,
+              width: 500,
+              fit: BoxFit.fill,
             ),
             Center(
               child: Text("Bali is the only Hindu-majority province in Indonesia, with 86.9% of the population adhering to Balinese Hinduism.It is renowned for its highly developed arts, including traditional and modern dance, sculpture, painting, leather, metalworking, and music. The Indonesian International Film Festival is held every year in Bali. Other international events that have been held in Bali include Miss World 2013, the 2018 Annual Meetings of the International Monetary Fund and the World Bank Group and the 2022 G20 summit. In March 2017, TripAdvisor named Bali as the world's top destination in its Traveller's Choice award, which it also earned in January 2021.[10][11]  Bali is part of the Coral Triangle, the area with the highest biodiversity of marine species, especially fish and turtles.[12] In this area alone, over 500 reef-building coral species can be found. For comparison, this is about seven times as many as in the entire Caribbean.[13] Bali is the home of the Subak irrigation system, a UNESCO World Heritage Si.",style: TextStyle(

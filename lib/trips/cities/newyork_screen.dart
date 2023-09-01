@@ -69,9 +69,9 @@ class _NewYorkScreenState extends State<NewYorkScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Image(image: AssetImage("assets/images/new.jpg"),height: 300,
-              width: double.infinity,
-              fit: BoxFit.cover,
+            Image(image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2Fnew.jpg?alt=media&token=d9fe2b39-a695-4feb-939a-6e76708acb9e"),height: 160,
+              width: 500,
+              fit: BoxFit.fill,
             ),
             Center(
               child: Text("The city is the geographical and demographic center of both the Northeast megalopolis and the New York metropolitan area, the largest metropolitan area in the U.S. by both population and urban area. With over 20.1 million people in its metropolitan statistical area and 23.5 million in its combined statistical area as of 2020, New York City is one of the world's most populous megacities.[21] The city and its metropolitan area are the premier gateway for legal immigration to the United States. As many as 800 languages are spoken in New York,[22] making it the most linguistically diverse city in the world. New York City is home to more than 3.2 million residents born outside the U.S., the largest foreign-born population of any city in the world as of 2016.[23] It is the most visited U.S. city by international visitors.[24] Providing continuous 24/7 service and contributing to the nickname The City That Never Sleeps, the New York City Subway is the largest single-operator rapid transit system in the world with 472 passenger rail stations, and Penn Station in Midtown Manhattan is the busiest transportation hub in the Western Hemisphere.[25]"

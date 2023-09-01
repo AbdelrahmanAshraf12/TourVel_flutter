@@ -75,11 +75,10 @@ class _MadridScreenState extends State<MadridScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Image(
-              image: AssetImage("assets/images/mad.jfif"),
-              height: 300,
-              width: double.infinity,
-              fit: BoxFit.cover,
+            Image(image: NetworkImage(
+                "https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2Fmad.jfif?alt=media&token=c991ad90-622f-4be6-bd79-c4e571ab0fdf"),height: 180,
+              width: 500,
+              fit: BoxFit.fill,
             ),
             Center(
               child: Text("The Madrid urban agglomeration has the second-largest GDP[15] in the European Union and its influence in politics, education, entertainment, environment, media, fashion, science, culture, and the arts all contribute to its status as one of the world's major global cities.[16][17] Due to its economic output, high standard of living, and market size, Madrid is considered the major financial centre[18] and the leading economic hub of the Iberian Peninsula and of Southern Europe.[19][20] The metropolitan area hosts major Spanish companies such as Telefónica, Iberia, BBVA and FCC.[21] It concentrates the bulk of banking operations in the country and it is the Spanish-speaking city generating the largest amount of webpages.[21] For innovation, Madrid is ranked 19th in the world and 7th in Europe from 500 cities, in the 2022-2023 annual analysts Innovation Cities Index, published by 2ThinkNow.[22]"

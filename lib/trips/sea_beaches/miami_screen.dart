@@ -69,9 +69,9 @@ class _MiamiScreenState extends State<MiamiScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Image(image: AssetImage("assets/images/miam.jfif"),height: 300,
-              width: double.infinity,
-              fit: BoxFit.cover,
+            Image(image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2Fmiami.jfif?alt=media&token=9499dad0-633c-430b-a61c-158d5f85f236"),height: 160,
+              width: 500,
+              fit: BoxFit.fill,
             ),
             Center(
               child: Text("Miami Beach is a coastal resort city in Miami-Dade County, Florida, United States. It is part of the Miami metropolitan area of South Florida. The municipality is located on natural and human-made barrier islands between the Atlantic Ocean and Biscayne Bay, the latter of which separates the Beach from the mainland city of Miami. The neighborhood of South Beach, comprising the southernmost 2.5 sq mi (6.5 km2) of Miami Beach, along with Downtown Miami and the PortMiami, collectively form the commercial center of South Florida.[7] Miami Beach's population is 82,890 according to the 2020 census.It has been one of America's pre-eminent beach resorts since the early 20th century.",style: TextStyle(

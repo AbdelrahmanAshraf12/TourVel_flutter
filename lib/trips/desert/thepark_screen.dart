@@ -75,11 +75,9 @@ class _parkScreenState extends State<parkScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Image(
-              image: AssetImage("assets/images/park.JPG"),
-              height: 300,
-              width: double.infinity,
-              fit: BoxFit.cover,
+            Image(image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2Fpark.JPG?alt=media&token=d4374bf5-f730-487d-98ca-bc1143aa4e6b"),height: 160,
+              width: 500,
+              fit: BoxFit.fill,
             ),
             Center(
               child: Text(

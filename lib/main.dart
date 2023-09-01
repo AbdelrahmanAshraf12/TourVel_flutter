@@ -29,7 +29,6 @@ import 'package:flutter_project/trips/sea_beaches/miami_screen.dart';
 import 'package:flutter_project/trips/sea_beaches/myrtle%20_screen.dart';
 import 'package:flutter_project/trips/sea_beaches/sea_screen.dart';
 
-
 import 'navegation_bar/profileScreen.dart';
 import 'screens/login_screen.dart';
 
@@ -46,44 +45,42 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       //home:AuthScreen(),
-      initialRoute:WelcomeScreen.screenRoute ,
+      initialRoute: WelcomeScreen.screenRoute,
       routes: {
-        WelcomeScreen.screenRoute  : (context)=>  WelcomeScreen(),
-        AuthScreen.screenRoute:(context)=>  AuthScreen(),
-        HomeScreen.screenRoute: (context)=>  HomeScreen(),
-        RegisterScreen.screenRoute: (context)=>  RegisterScreen(),
-        LoginScreen.screenRoute: (context)=>  LoginScreen(),
-        LogoutScreen.screenRoute: (context)=>  LogoutScreen(),
-        ToursScreen.screenRoute  : (context)=>  ToursScreen(),
-        AboutScreen.screenRoute  : (context)=>  AboutScreen(),
-        LayoutScreen.screenRoute: (context)=>  LayoutScreen(),
-        UserScreen.screenRoute: (context)=>  UserScreen(),
-        CitiesScreen.screenRoute  : (context)=>  CitiesScreen(),
-        DesertScreen.screenRoute  : (context)=>  DesertScreen(),
-        MountainsScreen.screenRoute  : (context)=>  MountainsScreen(),
-        SeaScreen.screenRoute  : (context)=>  SeaScreen(),
-        LondonScreen.screenRoute  : (context)=>  LondonScreen(),
-        MadridScreen.screenRoute  : (context)=>  MadridScreen(),
-        NewYorkScreen.screenRoute  : (context)=>  NewYorkScreen(),
-        RomeScreen.screenRoute  : (context)=>  RomeScreen(),
-        WesternScreen.screenRoute  : (context)=>  WesternScreen(),
-        EasternScreen.screenRoute  : (context)=>  EasternScreen(),
-        parkScreen.screenRoute  : (context)=>  parkScreen(),
-        CarcrossScreen.screenRoute  : (context)=>  CarcrossScreen(),
-        AlpsScreen.screenRoute  : (context)=>  AlpsScreen(),
-        HimalayasScreen.screenRoute  : (context)=>  HimalayasScreen(),
-        RockyScreen.screenRoute  : (context)=>  RockyScreen(),
-        AtlasScreen.screenRoute  : (context)=>  AtlasScreen(),
-        BoraScreen.screenRoute  : (context)=>  BoraScreen(),
-        MiamiScreen.screenRoute  : (context)=>  MiamiScreen(),
-        BaliScreen.screenRoute  : (context)=>  BaliScreen(),
-        MyrtleScreen.screenRoute  : (context)=>  MyrtleScreen(),
-
-
+        WelcomeScreen.screenRoute: (context) => WelcomeScreen(),
+        AuthScreen.screenRoute: (context) => AuthScreen(),
+        HomeScreen.screenRoute: (context) => HomeScreen(),
+        RegisterScreen.screenRoute: (context) => RegisterScreen(),
+        LoginScreen.screenRoute: (context) => LoginScreen(),
+        LogoutScreen.screenRoute: (context) => LogoutScreen(),
+        ToursScreen.screenRoute: (context) => ToursScreen(),
+        AboutScreen.screenRoute: (context) => AboutScreen(),
+        LayoutScreen.screenRoute: (context) => LayoutScreen(),
+        UserScreen.screenRoute: (context) => UserScreen(),
+        CitiesScreen.screenRoute: (context) => CitiesScreen(),
+        DesertScreen.screenRoute: (context) => DesertScreen(),
+        MountainsScreen.screenRoute: (context) => MountainsScreen(),
+        SeaScreen.screenRoute: (context) => SeaScreen(),
+        LondonScreen.screenRoute: (context) => LondonScreen(),
+        MadridScreen.screenRoute: (context) => MadridScreen(),
+        NewYorkScreen.screenRoute: (context) => NewYorkScreen(),
+        RomeScreen.screenRoute: (context) => RomeScreen(),
+        WesternScreen.screenRoute: (context) => WesternScreen(),
+        EasternScreen.screenRoute: (context) => EasternScreen(),
+        parkScreen.screenRoute: (context) => parkScreen(),
+        CarcrossScreen.screenRoute: (context) => CarcrossScreen(),
+        AlpsScreen.screenRoute: (context) => AlpsScreen(),
+        HimalayasScreen.screenRoute: (context) => HimalayasScreen(),
+        RockyScreen.screenRoute: (context) => RockyScreen(),
+        AtlasScreen.screenRoute: (context) => AtlasScreen(),
+        BoraScreen.screenRoute: (context) => BoraScreen(),
+        MiamiScreen.screenRoute: (context) => MiamiScreen(),
+        BaliScreen.screenRoute: (context) => BaliScreen(),
+        MyrtleScreen.screenRoute: (context) => MyrtleScreen(),
       },
     );
   }

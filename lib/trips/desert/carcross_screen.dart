@@ -75,11 +75,9 @@ class _CarcrossScreenState extends State<CarcrossScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Image(
-              image: AssetImage("assets/images/park.JPG"),
-              height: 300,
-              width: double.infinity,
-              fit: BoxFit.cover,
+            Image(image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2Fcar.JPG?alt=media&token=c0820d61-e275-4dff-aad5-00fba79df7c2"),height: 160,
+              width: 500,
+              fit: BoxFit.fill,
             ),
             Center(
               child: Text(

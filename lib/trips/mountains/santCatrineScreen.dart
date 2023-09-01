@@ -69,9 +69,9 @@ class _AtlasScreenState extends State<AtlasScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Image(image: AssetImage("assets/images/sant.jpg"),height: 300,
-              width: double.infinity,
-              fit: BoxFit.cover,
+            Image(image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2Fsant.jpg?alt=media&token=73871540-4e77-4bce-b7a4-c1f82d774470"),height: 160,
+              width: 500,
+              fit: BoxFit.fill,
             ),
             Center(
               child: Text("Sant Catrine mountain Egypt , On the north of Mount Catherine, archaeologists uncovered a cave with paintings of people and animals in red pigment dates back to the Chalcolithic Period, c. 5th–4th millennium BC in January of 2020. According to John Darnell, red painted images are not as common as engraved images and text. The painting resembling a camel shows that at least some of the graffiti is not older than the first millennium BC and may belong to later period. The cave was filled with graffiti from different periods over time",style: TextStyle(

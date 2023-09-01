@@ -69,9 +69,9 @@ class _WesternScreenState extends State<WesternScreen> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Image(image: AssetImage("assets/images/west.jfif"),height: 300,
-              width: double.infinity,
-              fit: BoxFit.cover,
+            Image(image: NetworkImage("https://firebasestorage.googleapis.com/v0/b/tourvelapp-34f3a.appspot.com/o/images%2Fwest.jfif?alt=media&token=7f4cd5a9-1796-432c-96a0-23cf1afba1d4"),height: 160,
+              width: 500,
+              fit: BoxFit.fill,
             ),
             Center(
               child: Text("The Western Desert of Egypt is an area of the Sahara that lies west of the river Nile, up to the Libyan border, and south from the Mediterranean Sea to the border with Sudan. It is named in contrast to the Eastern Desert which extends east from the Nile to the Red Sea. The Western Desert is mostly rocky desert, though an area of sandy desert, known as the Great Sand Sea, lies to the west against the Libyan border. The desert covers an area of 680,650 km2 (262,800 sq mi) which is two-thirds of the land area of the country.[1] Its highest elevation is 1,000 m (3,300 ft) in the Gilf Kebir plateau to the far south-west of the country, on the Egypt-Sudan-Libya border. The Western Desert is barren and uninhabited save for a chain of oases which extend in an arc from Siwa, in the north-west, to Kharga in the south. It has been the scene of conflict in modern times, particularly during the Second World War.",style: TextStyle(
